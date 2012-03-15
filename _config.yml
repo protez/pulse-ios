@@ -1,0 +1,8 @@
+exclude: [README.md, Rakefile, src, lib, build]
+safe: true
+pygments: true
+lsi: false
+paginate: 10
+
+theme: normal
+brand: Pulse for iOS

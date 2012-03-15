@@ -1,0 +1,72 @@
+---
+layout: default
+title: Pulse for iOS
+---
+<header>
+    <div class="container">
+        <div class="hero-unit">
+            <h1>Pulse for iPhone and iPad</h1>
+            <p>
+                Building an <strong>unofficial</strong> client for <a href="http://www.neudesic.com">Neudesic</a>'s
+                <a href="http://www.neudesic.com/what/products/pulse/Pages/index.aspx">Pulse</a> product
+                for use on the iPhone and iPad.
+            </p>
+            <a class="btn btn-primary btn-large" href="http://github.com/mfcollins3/pulse-ios">View the project on GitHub</a>
+        </div>
+    </div>
+</header>
+<section id="content">
+    <div class="container">
+        <article>
+            <header class="page-header">
+                <h1>Introduction</h1>
+            </header>
+            <p>
+                Welcome to the website for the <strong>unofficial</strong> iPhone and iPad
+                client for Neudesic Pulse. The goal of this website is to document the
+                design and construction of the Pulse client application and to provide
+                end-user documentation and helpful tips and tricks for interacting with
+                Neudesic Pulse and the Pulse client.
+            </p>
+            <p>
+                Please note that this is an <strong>unofficial</strong> project. It's a
+                hobby project that has three primary goals:
+            </p>
+            <ol>
+                <li>Learn how to program against the Pulse API</li>
+                <li>Experiment with ideas for developing iOS applications around Pulse</li>
+                <li>Serve as an example to other Pusle users to demonstrate how the Pulse API can be used to integrate with Pulse</li>
+            </ol>
+            <p>
+                As a Neudesic employee, Pulse is a product that I use very frequently during
+                my daily activities. I use it to follow news about the company as well as to
+                collaborate with customers and co-workers on projects. Pulse can help to
+                facilitate communication and discussion in distributed teams much more
+                effectively than email.
+            </p>
+        </article>
+        <div class="row">
+            <div class="span8">
+                <div class="page-header">
+                    <h1>Recent Updates</h1>
+                </div>
+                <ul class="unstyled">
+                    {% for post in paginator.posts %}
+                        <article>
+                            <header>
+                                <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                                <time datetime="{{post.date | date_to_xml_schema}}" pubdate>{{post.date | date_to_long_string}}</time>
+                            </header>
+                            <p>{{post.description}}</p>
+                            <p><a href="{{post.url}}">Read</a></p>
+                        </article>
+                    {% endfor %}
+                </ul>
+                <p><a href="/blog">Read more posts</a></p>
+            </div>
+            <div class="span4">
+
+            </div>
+        </div>
+    </div>
+</section>
