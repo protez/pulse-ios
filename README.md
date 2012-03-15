@@ -91,7 +91,7 @@ following way:
     $ git clone github-url master
     $ git clone master gh-pages
     $ cd gh-pages
-    $ git gh-pages
+    $ git checkout gh-pages
 
 The parts of the build process that update the GitHub Pages website will refer
 to the GitHub Pages website using the relative path *../gh-pages*. Please see
