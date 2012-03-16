@@ -3,6 +3,7 @@ safe: true
 pygments: true
 lsi: false
 paginate: 10
+url: http://mfcollins3.github.com/pulse-ios
 
 theme: normal
 brand: Pulse for iOS
