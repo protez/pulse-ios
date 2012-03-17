@@ -1,0 +1,30 @@
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"/>
+                <span class="icon-bar"/>
+                <span class="icon-bar"/>
+            </a>
+            <a class="brand" href="{{site.url}}/">{{site.brand}}</a>
+            <div class="nav-collapse">
+                {% case page.url %}
+                {% when '/index.html' %}
+                {% assign homeClass = 'active' %}
+                {% when '/blog/index.html' %}
+                {% assign blogClass = 'active' %}
+                {% when '/license.html' %}
+                {% assign licenseClass = 'active' %}
+                {% endcase %}
+                <ul class="nav">
+                    <li class="{{homeClass}}"><a href="{{site.url}}/">Home</a></li>
+                    <li class="{{blogClass}}"><a href="{{site.url}}/blog">Blog</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li class="{{licenseClass}}"><a href="{{site.url}}/license.html">License</a></li>
+                    <li><a href="http://github.com/mfcollins3/pulse-ios">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

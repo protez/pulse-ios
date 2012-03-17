@@ -3,83 +3,16 @@
     <head>
         <title>{{page.title}}</title>
         <link rel="stylesheet" href="{{site.url}}/css/{{site.theme}}.css"/>
+        <link rel="alternate" type="application/rss+xml" href="{{site.url}}/rss.xml" title="Pulse for iOS"/>
+        <meta name="description" content="{{page.description}}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {% include googleanalytics.html %}
     </head>
     <body>
-        <nav class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"/>
-                        <span class="icon-bar"/>
-                        <span class="icon-bar"/>
-                    </a>
-                    <a class="brand" href="{{site.url}}">{{site.brand}}</a>
-                    <div class="nav-collapse">
-                        {% case page.url %}
-                        {% when '/index.html' %}
-                        {% assign homeClass = 'active' %}
-                        {% when '/blog/index.html' %}
-                        {% assign blogClass = 'active' %}
-                        {% when '/license.html' %}
-                        {% assign licenseClass = 'active' %}
-                        {% endcase %}
-                        <ul class="nav">
-                            <li class="{{homeClass}}"><a href="{{site.url}}">Home</a></li>
-                            <li class="{{blogClass}}"><a href="{{site.url}}/blog">Blog</a></li>
-                        </ul>
-                        <ul class="nav pull-right">
-                            <li class="{{licenseClass}}"><a href="{{site.url}}/license.html">License</a></li>
-                            <li><a href="http://github.com/mfcollins3/pulse-ios">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <a href="http://github.com/mfcollins3/pulse-ios"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+        {% include navbar.html %}
+        {% include githubribbon.html %}
         {{content}}
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <p>Copyright &copy; 2012 Neudesic, LLC</p>
-                        <p>
-                            This software is licensed under the MIT license. For license terms,
-                            please see the <a href="/license.html">License</a> page.
-                        </p>
-                    </div>
-                    <div class="span4">
-                        <h5>Links</h5>
-                        <ul class="unstyled">
-                            <li><a href="http://www.neudesic.com/what/products/pulse/Pages/index.aspx">Pulse</a></li>
-                            <li><a href="http://itunes.apple.com/us/app/neudesic-pulse/id404225359?mt=8">Official Pulse Client for iPhone</a></li>
-                            <li><a href="https://play.google.com/store/apps/details?id=com.neudesic.mobile.pulse&feature=search_result">Official Pulse Client for Android</a></li>
-                            <li><a href="http://www.windowsphone.com/en-US/apps/ffa7b316-4940-e011-854c-00237de2db9e">Official Pulse Client for Windows Phone 7</a></li>
-                        </ul>
-                        <h5>Also on GitHub</h5>
-                        <ul class="unstyled">
-                            <li><a href="http://mfcollins3.github.com/pulse-metro">Unofficial Pulse Client for Windows 8 Metro</a></li>
-                        </ul>
-                    </div>
-                    <div class="span4">
-                        <address>
-                            <strong>Neudesic, LLC</strong><br/>
-                            <a href="http://www.neudesic.com">http://www.neudesic.com</a><br/>
-                            <a href="http://twitter.com/neudesic">@neudesic</a><br/>
-                            8105 Irvine Center Drive<br/>
-                            Suite 1200<br/>
-                            Irvine, CA 92618<br/>
-                            <a href="http://www.neudesic.com/About/ContactUs/Pages/Locations.aspx">Other Locations</a>
-                        </address>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script type="text/javascript" src="{{site.url}}/js/website.js"></script>
-        {% if page.script %}
-            <script type="text/javascript">
-                {{page.script}}
-            </script>
-        {% endif %}
+        {% include footer.html %}
+        {% include scriptblock.html %}
     </body>
 </html>

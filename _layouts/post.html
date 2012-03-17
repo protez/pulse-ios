@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{page.title}}</title>
+		<link rel="stylesheet" href="{{site.url}}/css/{{site.theme}}.css"/>
+		<link rel="alternate" type="application/rss+xml" href="{{site.url}}/rss.xml" title="Pulse for iOS"/>
+		<meta name="description" content="{{page.description}}"/>
+		<meta property="fb:admins" content="mfcollins3"/>
+		<meta property="fb:app_id" content="265632360179888"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		{% include googleanalytics.html %}
+	</head>
+	<body>
+		{% include facebook.html %}
+		{% assign blogClass = 'active' %}
+		{% include navbar.html %}
+		<div class="container">
+			<header>
+				<nav>
+					<ul class="breadcrumb">
+						<li><a href="{{site.url}}/">Home</a><span class="divider">/</span></li>
+						<li><a href="{{site.url}}/blog">Blog</a><span class="divider">/</span></li>
+						<li class="active"><a href="{{site.url}}{{page.url}}">{{page.title}}</a></li>
+					</ul>
+				</nav>
+			</header>
+			<article>
+				<header>
+                    <div class="page-header">
+                        <h1>
+                            {{page.title}}
+                        </h1>
+                    </div>
+				</header>
+                <p><time datetime="{{page.date | date_to_xml_schema}}" pubdate>{{page.date | date_to_long_string}}</time></p>
+                {{content}}
+			</article>
+			{% include facebookcomments.html %}
+		</div>
+		{% include footer.html %}
+		{% include scriptblock.html %}
+	</body>
+</html>
