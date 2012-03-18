@@ -12,9 +12,26 @@
 		4CD44687151687990085474F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44686151687990085474F /* CoreGraphics.framework */; };
 		4CD44689151687990085474F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44688151687990085474F /* CoreData.framework */; };
 		4CD4468F151687990085474F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4468D151687990085474F /* InfoPlist.strings */; };
-		4CD44691151687990085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44690151687990085474F /* main.m */; };
 		4CD44695151687990085474F /* PulseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44694151687990085474F /* PulseApplicationDelegate.m */; };
 		4CD44698151687990085474F /* Pulse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44696151687990085474F /* Pulse.xcdatamodeld */; };
+		4CD446A115168A7A0085474F /* PulseApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44694151687990085474F /* PulseApplicationDelegate.m */; };
+		4CD446A215168A7A0085474F /* Pulse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44696151687990085474F /* Pulse.xcdatamodeld */; };
+		4CD446A415168A7A0085474F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44682151687990085474F /* UIKit.framework */; };
+		4CD446A515168A7A0085474F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44684151687990085474F /* Foundation.framework */; };
+		4CD446A615168A7A0085474F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44686151687990085474F /* CoreGraphics.framework */; };
+		4CD446A715168A7A0085474F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44688151687990085474F /* CoreData.framework */; };
+		4CD446A915168A7A0085474F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4468D151687990085474F /* InfoPlist.strings */; };
+		4CD446BD15168C4B0085474F /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446B715168C4B0085474F /* frank_static_resources.bundle */; };
+		4CD446BE15168C4B0085474F /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD446B815168C4B0085474F /* libFrank.a */; };
+		4CD446BF15168C4B0085474F /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD446B915168C4B0085474F /* libShelley.a */; };
+		4CD446C115168C6F0085474F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD446C015168C6F0085474F /* CFNetwork.framework */; };
+		4CD446CB15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446CA15168D3E0085474F /* MainStoryboard_iPhone.storyboard */; };
+		4CD446CC15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446CA15168D3E0085474F /* MainStoryboard_iPhone.storyboard */; };
+		4CD446CE15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446CD15168D6C0085474F /* MainStoryboard_iPad.storyboard */; };
+		4CD446CF15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446CD15168D6C0085474F /* MainStoryboard_iPad.storyboard */; };
+		4CD446E115169E7F0085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446E015169E7F0085474F /* main.m */; };
+		4CD446E415169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446E315169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m */; };
+		4CD446E515169FD80085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44690151687990085474F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +47,17 @@
 		4CD44693151687990085474F /* PulseApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulseApplicationDelegate.h; sourceTree = "<group>"; };
 		4CD44694151687990085474F /* PulseApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseApplicationDelegate.m; sourceTree = "<group>"; };
 		4CD44697151687990085474F /* Pulse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pulse.xcdatamodel; sourceTree = "<group>"; };
+		4CD446AD15168A7A0085474F /* Pulse Acceptance Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulse Acceptance Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD446AF15168A7A0085474F /* PulseAcceptanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PulseAcceptanceTests-Info.plist"; path = "/Users/michael/Projects/pulse-ios/MAIN/src/Pulse/PulseAcceptanceTests-Info.plist"; sourceTree = "<absolute>"; };
+		4CD446B715168C4B0085474F /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		4CD446B815168C4B0085474F /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
+		4CD446B915168C4B0085474F /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
+		4CD446C015168C6F0085474F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4CD446CA15168D3E0085474F /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4CD446CD15168D6C0085474F /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4CD446E015169E7F0085474F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD446E215169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulseAcceptanceTestsApplicationDelegate.h; sourceTree = "<group>"; };
+		4CD446E315169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseAcceptanceTestsApplicationDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,12 +72,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD446A315168A7A0085474F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446C115168C6F0085474F /* CFNetwork.framework in Frameworks */,
+				4CD446A415168A7A0085474F /* UIKit.framework in Frameworks */,
+				4CD446A515168A7A0085474F /* Foundation.framework in Frameworks */,
+				4CD446A615168A7A0085474F /* CoreGraphics.framework in Frameworks */,
+				4CD446A715168A7A0085474F /* CoreData.framework in Frameworks */,
+				4CD446BE15168C4B0085474F /* libFrank.a in Frameworks */,
+				4CD446BF15168C4B0085474F /* libShelley.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4CD44673151687990085474F = {
 			isa = PBXGroup;
 			children = (
+				4CD446D0151692740085474F /* Acceptance Tests */,
+				4CD446B015168C4B0085474F /* Frank */,
 				4CD4468A151687990085474F /* Pulse */,
 				4CD44681151687990085474F /* Frameworks */,
 				4CD4467F151687990085474F /* Products */,
@@ -60,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4CD4467E151687990085474F /* Pulse.app */,
+				4CD446AD15168A7A0085474F /* Pulse Acceptance Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +112,7 @@
 		4CD44681151687990085474F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD446C015168C6F0085474F /* CFNetwork.framework */,
 				4CD44682151687990085474F /* UIKit.framework */,
 				4CD44684151687990085474F /* Foundation.framework */,
 				4CD44686151687990085474F /* CoreGraphics.framework */,
@@ -78,6 +124,8 @@
 		4CD4468A151687990085474F /* Pulse */ = {
 			isa = PBXGroup;
 			children = (
+				4CD446C315168CEA0085474F /* iPhone */,
+				4CD446C215168CDC0085474F /* iPad */,
 				4CD44693151687990085474F /* PulseApplicationDelegate.h */,
 				4CD44694151687990085474F /* PulseApplicationDelegate.m */,
 				4CD44696151687990085474F /* Pulse.xcdatamodeld */,
@@ -95,6 +143,61 @@
 				4CD44692151687990085474F /* Pulse-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD446B015168C4B0085474F /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446B715168C4B0085474F /* frank_static_resources.bundle */,
+				4CD446B815168C4B0085474F /* libFrank.a */,
+				4CD446B915168C4B0085474F /* libShelley.a */,
+			);
+			name = Frank;
+			path = ../../Frank;
+			sourceTree = "<group>";
+		};
+		4CD446C215168CDC0085474F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446CD15168D6C0085474F /* MainStoryboard_iPad.storyboard */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		4CD446C315168CEA0085474F /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446CA15168D3E0085474F /* MainStoryboard_iPhone.storyboard */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		4CD446D0151692740085474F /* Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446AF15168A7A0085474F /* PulseAcceptanceTests-Info.plist */,
+				4CD446D21516929B0085474F /* iPhone */,
+				4CD446D1151692930085474F /* iPad */,
+				4CD446E015169E7F0085474F /* main.m */,
+				4CD446E215169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.h */,
+				4CD446E315169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m */,
+			);
+			name = "Acceptance Tests";
+			path = "../Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		4CD446D1151692930085474F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		4CD446D21516929B0085474F /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +218,23 @@
 			name = Pulse;
 			productName = Pulse;
 			productReference = 4CD4467E151687990085474F /* Pulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CD4469E15168A7A0085474F /* Acceptance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD446AA15168A7A0085474F /* Build configuration list for PBXNativeTarget "Acceptance Tests" */;
+			buildPhases = (
+				4CD4469F15168A7A0085474F /* Sources */,
+				4CD446A315168A7A0085474F /* Frameworks */,
+				4CD446A815168A7A0085474F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acceptance Tests";
+			productName = Pulse;
+			productReference = 4CD446AD15168A7A0085474F /* Pulse Acceptance Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				4CD4467D151687990085474F /* Pulse */,
+				4CD4469E15168A7A0085474F /* Acceptance Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +270,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD4468F151687990085474F /* InfoPlist.strings in Resources */,
+				4CD446CB15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */,
+				4CD446CE15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD446A815168A7A0085474F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446A915168A7A0085474F /* InfoPlist.strings in Resources */,
+				4CD446BD15168C4B0085474F /* frank_static_resources.bundle in Resources */,
+				4CD446CC15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */,
+				4CD446CF15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +293,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD44691151687990085474F /* main.m in Sources */,
 				4CD44695151687990085474F /* PulseApplicationDelegate.m in Sources */,
 				4CD44698151687990085474F /* Pulse.xcdatamodeld in Sources */,
+				4CD446E515169FD80085474F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD4469F15168A7A0085474F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446A115168A7A0085474F /* PulseApplicationDelegate.m in Sources */,
+				4CD446A215168A7A0085474F /* Pulse.xcdatamodeld in Sources */,
+				4CD446E115169E7F0085474F /* main.m in Sources */,
+				4CD446E415169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +393,44 @@
 			};
 			name = Release;
 		};
+		4CD446AB15168A7A0085474F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pulse/Pulse-Prefix.pch";
+				INFOPLIST_FILE = "PulseAcceptanceTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Pulse Acceptance Tests";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CD446AC15168A7A0085474F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pulse/Pulse-Prefix.pch";
+				INFOPLIST_FILE = "PulseAcceptanceTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Pulse Acceptance Tests";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -265,6 +448,14 @@
 			buildConfigurations = (
 				4CD4469C151687990085474F /* Debug */,
 				4CD4469D151687990085474F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CD446AA15168A7A0085474F /* Build configuration list for PBXNativeTarget "Acceptance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD446AB15168A7A0085474F /* Debug */,
+				4CD446AC15168A7A0085474F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
