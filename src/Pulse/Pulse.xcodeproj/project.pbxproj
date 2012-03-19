@@ -32,6 +32,12 @@
 		4CD446E115169E7F0085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446E015169E7F0085474F /* main.m */; };
 		4CD446E415169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446E315169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m */; };
 		4CD446E515169FD80085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD44690151687990085474F /* main.m */; };
+		4CD446EC1516A59F0085474F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44682151687990085474F /* UIKit.framework */; };
+		4CD446ED1516A59F0085474F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44684151687990085474F /* Foundation.framework */; };
+		4CD446EE1516A59F0085474F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44686151687990085474F /* CoreGraphics.framework */; };
+		4CD446F41516A59F0085474F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446F21516A59F0085474F /* InfoPlist.strings */; };
+		4CD446F61516A59F0085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446F51516A59F0085474F /* main.m */; };
+		4CD446FF1516A96D0085474F /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD446FE1516A96D0085474F /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,12 @@
 		4CD446E015169E7F0085474F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CD446E215169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulseAcceptanceTestsApplicationDelegate.h; sourceTree = "<group>"; };
 		4CD446E315169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseAcceptanceTestsApplicationDelegate.m; sourceTree = "<group>"; };
+		4CD446EA1516A59F0085474F /* Pulse Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pulse Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD446F11516A59F0085474F /* Pulse Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pulse Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		4CD446F31516A59F0085474F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CD446F51516A59F0085474F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD446F71516A59F0085474F /* Pulse Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pulse Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4CD446FE1516A96D0085474F /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD446E71516A59F0085474F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446EC1516A59F0085474F /* UIKit.framework in Frameworks */,
+				4CD446ED1516A59F0085474F /* Foundation.framework in Frameworks */,
+				4CD446EE1516A59F0085474F /* CoreGraphics.framework in Frameworks */,
+				4CD446FF1516A96D0085474F /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +118,7 @@
 				4CD446D0151692740085474F /* Acceptance Tests */,
 				4CD446B015168C4B0085474F /* Frank */,
 				4CD4468A151687990085474F /* Pulse */,
+				4CD446EF1516A59F0085474F /* Unit Tests */,
 				4CD44681151687990085474F /* Frameworks */,
 				4CD4467F151687990085474F /* Products */,
 			);
@@ -105,6 +129,7 @@
 			children = (
 				4CD4467E151687990085474F /* Pulse.app */,
 				4CD446AD15168A7A0085474F /* Pulse Acceptance Tests.app */,
+				4CD446EA1516A59F0085474F /* Pulse Unit Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +137,7 @@
 		4CD44681151687990085474F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD446FE1516A96D0085474F /* GHUnitIOS.framework */,
 				4CD446C015168C6F0085474F /* CFNetwork.framework */,
 				4CD44682151687990085474F /* UIKit.framework */,
 				4CD44684151687990085474F /* Foundation.framework */,
@@ -200,6 +226,26 @@
 			path = iPhone;
 			sourceTree = "<group>";
 		};
+		4CD446EF1516A59F0085474F /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446F01516A59F0085474F /* Supporting Files */,
+			);
+			name = "Unit Tests";
+			path = "Pulse Unit Tests";
+			sourceTree = "<group>";
+		};
+		4CD446F01516A59F0085474F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD446F11516A59F0085474F /* Pulse Unit Tests-Info.plist */,
+				4CD446F21516A59F0085474F /* InfoPlist.strings */,
+				4CD446F51516A59F0085474F /* main.m */,
+				4CD446F71516A59F0085474F /* Pulse Unit Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +283,23 @@
 			productReference = 4CD446AD15168A7A0085474F /* Pulse Acceptance Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4CD446E91516A59F0085474F /* Pulse Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD446FB1516A59F0085474F /* Build configuration list for PBXNativeTarget "Pulse Unit Tests" */;
+			buildPhases = (
+				4CD446E61516A59F0085474F /* Sources */,
+				4CD446E71516A59F0085474F /* Frameworks */,
+				4CD446E81516A59F0085474F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pulse Unit Tests";
+			productName = "Pulse Unit Tests";
+			productReference = 4CD446EA1516A59F0085474F /* Pulse Unit Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,6 +323,7 @@
 			targets = (
 				4CD4467D151687990085474F /* Pulse */,
 				4CD4469E15168A7A0085474F /* Acceptance Tests */,
+				4CD446E91516A59F0085474F /* Pulse Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,6 +347,14 @@
 				4CD446BD15168C4B0085474F /* frank_static_resources.bundle in Resources */,
 				4CD446CC15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */,
 				4CD446CF15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD446E81516A59F0085474F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446F41516A59F0085474F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +382,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD446E61516A59F0085474F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD446F61516A59F0085474F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -317,6 +397,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CD4468E151687990085474F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CD446F21516A59F0085474F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD446F31516A59F0085474F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -431,6 +519,46 @@
 			};
 			name = Release;
 		};
+		4CD446FC1516A59F0085474F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pulse Unit Tests/Pulse Unit Tests-Prefix.pch";
+				INFOPLIST_FILE = "Pulse Unit Tests/Pulse Unit Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CD446FD1516A59F0085474F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pulse Unit Tests/Pulse Unit Tests-Prefix.pch";
+				INFOPLIST_FILE = "Pulse Unit Tests/Pulse Unit Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +584,14 @@
 			buildConfigurations = (
 				4CD446AB15168A7A0085474F /* Debug */,
 				4CD446AC15168A7A0085474F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CD446FB1516A59F0085474F /* Build configuration list for PBXNativeTarget "Pulse Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD446FC1516A59F0085474F /* Debug */,
+				4CD446FD1516A59F0085474F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
