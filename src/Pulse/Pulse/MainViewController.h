@@ -13,11 +13,20 @@
 @class SignInViewController;
 
 /**
- * The MainViewControll class implements the behavior and controls the
+ * The MainViewController class implements the behavior and controls the
  * presentation of the main view for the Pulse client application.
  */
 @interface MainViewController : UIViewController
 
+/**
+ * Creates the SignInViewController object to use to sign the user into Pulse.
+ *
+ * The createSignInViewController method is overriden by derived classes to
+ * create and configure the SignInViewController object for the specific device
+ * that the application is running on.
+ *
+ * @return Returns a SignInViewController object.
+ */
 - (SignInViewController *)createSignInViewController;
 
 @end
