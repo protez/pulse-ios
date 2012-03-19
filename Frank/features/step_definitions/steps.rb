@@ -25,11 +25,16 @@ Given /^I launch the (iphone|ipad) application$/ do |device|
 end
 
 When /^I sign into Pulse$/ do
-  pending
+  steps %{
+    When I type "https://pulse.neudesic.com" into the "Enter the address of the Pulse server" text field
+    When I type "#{ENV['PULSE_USER_NAME']}" into the "Enter your Pulse user name" text field
+    When I type "#{ENV['PULSE_PASSWORD']}" into the "Enter your Pulse password" text field
+    When I touch "Sign In"
+  }
 end
 
 Then /^I will see my feed$/ do
-  pending
+  steps "Then I wait to not see a navigation bar titled \"Sign Into Pulse\""
 end
 
 Given /^I have previously signed into Pulse$/ do

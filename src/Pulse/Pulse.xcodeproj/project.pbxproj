@@ -38,6 +38,29 @@
 		4CD446F41516A59F0085474F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD446F21516A59F0085474F /* InfoPlist.strings */; };
 		4CD446F61516A59F0085474F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD446F51516A59F0085474F /* main.m */; };
 		4CD446FF1516A96D0085474F /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD446FE1516A96D0085474F /* GHUnitIOS.framework */; };
+		4CD447021516D9110085474F /* MainViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447011516D9110085474F /* MainViewControllerTests.m */; };
+		4CD447051516D98A0085474F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447041516D98A0085474F /* MainViewController.m */; };
+		4CD447061516D98A0085474F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447041516D98A0085474F /* MainViewController.m */; };
+		4CD447071516D98A0085474F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447041516D98A0085474F /* MainViewController.m */; };
+		4CD447091516DD400085474F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD447081516DD400085474F /* libOCMock.a */; };
+		4CD4470F1516DF940085474F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4470E1516DF940085474F /* SignInViewController.m */; };
+		4CD447101516DF940085474F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4470E1516DF940085474F /* SignInViewController.m */; };
+		4CD447111516DF940085474F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4470E1516DF940085474F /* SignInViewController.m */; };
+		4CD447141516E4CD0085474F /* MainViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447131516E4CD0085474F /* MainViewController_iPad.m */; };
+		4CD447151516E4CD0085474F /* MainViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447131516E4CD0085474F /* MainViewController_iPad.m */; };
+		4CD447161516E4CD0085474F /* MainViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447131516E4CD0085474F /* MainViewController_iPad.m */; };
+		4CD447191516E50C0085474F /* MainViewController_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447181516E50C0085474F /* MainViewController_iPadTests.m */; };
+		4CD4471C1516E9A40085474F /* MainViewController_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4471B1516E9A40085474F /* MainViewController_iPhoneTests.m */; };
+		4CD4471F1516EA070085474F /* MainViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4471E1516EA070085474F /* MainViewController_iPhone.m */; };
+		4CD447201516EA070085474F /* MainViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4471E1516EA070085474F /* MainViewController_iPhone.m */; };
+		4CD447211516EA070085474F /* MainViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4471E1516EA070085474F /* MainViewController_iPhone.m */; };
+		4CD447231516EBE00085474F /* SignInView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447221516EBE00085474F /* SignInView_iPad.xib */; };
+		4CD447241516EBE00085474F /* SignInView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447221516EBE00085474F /* SignInView_iPad.xib */; };
+		4CD447251516EBE00085474F /* SignInView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447221516EBE00085474F /* SignInView_iPad.xib */; };
+		4CD447271516EE4A0085474F /* SignInView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447261516EE4A0085474F /* SignInView_iPhone.xib */; };
+		4CD447281516EE4A0085474F /* SignInView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447261516EE4A0085474F /* SignInView_iPhone.xib */; };
+		4CD447291516EE4A0085474F /* SignInView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447261516EE4A0085474F /* SignInView_iPhone.xib */; };
+		4CD4472C1516F3E60085474F /* SignInViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +93,21 @@
 		4CD446F51516A59F0085474F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CD446F71516A59F0085474F /* Pulse Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pulse Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4CD446FE1516A96D0085474F /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = ../../Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
+		4CD447011516D9110085474F /* MainViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTests.m; sourceTree = "<group>"; };
+		4CD447031516D98A0085474F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4CD447041516D98A0085474F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4CD447081516DD400085474F /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../../Frameworks/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		4CD4470D1516DF940085474F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		4CD4470E1516DF940085474F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		4CD447121516E4CD0085474F /* MainViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController_iPad.h; sourceTree = "<group>"; };
+		4CD447131516E4CD0085474F /* MainViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController_iPad.m; sourceTree = "<group>"; };
+		4CD447181516E50C0085474F /* MainViewController_iPadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController_iPadTests.m; sourceTree = "<group>"; };
+		4CD4471B1516E9A40085474F /* MainViewController_iPhoneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController_iPhoneTests.m; sourceTree = "<group>"; };
+		4CD4471D1516EA070085474F /* MainViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController_iPhone.h; sourceTree = "<group>"; };
+		4CD4471E1516EA070085474F /* MainViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController_iPhone.m; sourceTree = "<group>"; };
+		4CD447221516EBE00085474F /* SignInView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView_iPad.xib; sourceTree = "<group>"; };
+		4CD447261516EE4A0085474F /* SignInView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView_iPhone.xib; sourceTree = "<group>"; };
+		4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD447091516DD400085474F /* libOCMock.a in Frameworks */,
 				4CD446EC1516A59F0085474F /* UIKit.framework in Frameworks */,
 				4CD446ED1516A59F0085474F /* Foundation.framework in Frameworks */,
 				4CD446EE1516A59F0085474F /* CoreGraphics.framework in Frameworks */,
@@ -116,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				4CD446D0151692740085474F /* Acceptance Tests */,
-				4CD446B015168C4B0085474F /* Frank */,
 				4CD4468A151687990085474F /* Pulse */,
 				4CD446EF1516A59F0085474F /* Unit Tests */,
 				4CD44681151687990085474F /* Frameworks */,
@@ -137,6 +175,7 @@
 		4CD44681151687990085474F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD447081516DD400085474F /* libOCMock.a */,
 				4CD446FE1516A96D0085474F /* GHUnitIOS.framework */,
 				4CD446C015168C6F0085474F /* CFNetwork.framework */,
 				4CD44682151687990085474F /* UIKit.framework */,
@@ -156,6 +195,10 @@
 				4CD44694151687990085474F /* PulseApplicationDelegate.m */,
 				4CD44696151687990085474F /* Pulse.xcdatamodeld */,
 				4CD4468B151687990085474F /* Supporting Files */,
+				4CD447031516D98A0085474F /* MainViewController.h */,
+				4CD447041516D98A0085474F /* MainViewController.m */,
+				4CD4470D1516DF940085474F /* SignInViewController.h */,
+				4CD4470E1516DF940085474F /* SignInViewController.m */,
 			);
 			path = Pulse;
 			sourceTree = "<group>";
@@ -186,6 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				4CD446CD15168D6C0085474F /* MainStoryboard_iPad.storyboard */,
+				4CD447121516E4CD0085474F /* MainViewController_iPad.h */,
+				4CD447131516E4CD0085474F /* MainViewController_iPad.m */,
+				4CD447221516EBE00085474F /* SignInView_iPad.xib */,
 			);
 			path = iPad;
 			sourceTree = "<group>";
@@ -194,6 +240,9 @@
 			isa = PBXGroup;
 			children = (
 				4CD446CA15168D3E0085474F /* MainStoryboard_iPhone.storyboard */,
+				4CD4471D1516EA070085474F /* MainViewController_iPhone.h */,
+				4CD4471E1516EA070085474F /* MainViewController_iPhone.m */,
+				4CD447261516EE4A0085474F /* SignInView_iPhone.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -201,6 +250,7 @@
 		4CD446D0151692740085474F /* Acceptance Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4CD446B015168C4B0085474F /* Frank */,
 				4CD446AF15168A7A0085474F /* PulseAcceptanceTests-Info.plist */,
 				4CD446D21516929B0085474F /* iPhone */,
 				4CD446D1151692930085474F /* iPad */,
@@ -230,6 +280,10 @@
 			isa = PBXGroup;
 			children = (
 				4CD446F01516A59F0085474F /* Supporting Files */,
+				4CD447011516D9110085474F /* MainViewControllerTests.m */,
+				4CD447181516E50C0085474F /* MainViewController_iPadTests.m */,
+				4CD4471B1516E9A40085474F /* MainViewController_iPhoneTests.m */,
+				4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */,
 			);
 			name = "Unit Tests";
 			path = "Pulse Unit Tests";
@@ -336,6 +390,8 @@
 				4CD4468F151687990085474F /* InfoPlist.strings in Resources */,
 				4CD446CB15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */,
 				4CD446CE15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */,
+				4CD447231516EBE00085474F /* SignInView_iPad.xib in Resources */,
+				4CD447271516EE4A0085474F /* SignInView_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +403,8 @@
 				4CD446BD15168C4B0085474F /* frank_static_resources.bundle in Resources */,
 				4CD446CC15168D3E0085474F /* MainStoryboard_iPhone.storyboard in Resources */,
 				4CD446CF15168D6C0085474F /* MainStoryboard_iPad.storyboard in Resources */,
+				4CD447241516EBE00085474F /* SignInView_iPad.xib in Resources */,
+				4CD447281516EE4A0085474F /* SignInView_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD446F41516A59F0085474F /* InfoPlist.strings in Resources */,
+				4CD447251516EBE00085474F /* SignInView_iPad.xib in Resources */,
+				4CD447291516EE4A0085474F /* SignInView_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +428,10 @@
 				4CD44695151687990085474F /* PulseApplicationDelegate.m in Sources */,
 				4CD44698151687990085474F /* Pulse.xcdatamodeld in Sources */,
 				4CD446E515169FD80085474F /* main.m in Sources */,
+				4CD447051516D98A0085474F /* MainViewController.m in Sources */,
+				4CD4470F1516DF940085474F /* SignInViewController.m in Sources */,
+				4CD447141516E4CD0085474F /* MainViewController_iPad.m in Sources */,
+				4CD4471F1516EA070085474F /* MainViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +443,10 @@
 				4CD446A215168A7A0085474F /* Pulse.xcdatamodeld in Sources */,
 				4CD446E115169E7F0085474F /* main.m in Sources */,
 				4CD446E415169F2D0085474F /* PulseAcceptanceTestsApplicationDelegate.m in Sources */,
+				4CD447061516D98A0085474F /* MainViewController.m in Sources */,
+				4CD447101516DF940085474F /* SignInViewController.m in Sources */,
+				4CD447151516E4CD0085474F /* MainViewController_iPad.m in Sources */,
+				4CD447201516EA070085474F /* MainViewController_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +455,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD446F61516A59F0085474F /* main.m in Sources */,
+				4CD447021516D9110085474F /* MainViewControllerTests.m in Sources */,
+				4CD447071516D98A0085474F /* MainViewController.m in Sources */,
+				4CD447111516DF940085474F /* SignInViewController.m in Sources */,
+				4CD447161516E4CD0085474F /* MainViewController_iPad.m in Sources */,
+				4CD447191516E50C0085474F /* MainViewController_iPadTests.m in Sources */,
+				4CD4471C1516E9A40085474F /* MainViewController_iPhoneTests.m in Sources */,
+				4CD447211516EA070085474F /* MainViewController_iPhone.m in Sources */,
+				4CD4472C1516F3E60085474F /* SignInViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +605,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pulse Unit Tests/Pulse Unit Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../Frameworks/OCMock;
 				INFOPLIST_FILE = "Pulse Unit Tests/Pulse Unit Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frameworks/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -549,7 +630,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pulse Unit Tests/Pulse Unit Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../Frameworks/OCMock;
 				INFOPLIST_FILE = "Pulse Unit Tests/Pulse Unit Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Frameworks/OCMock\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
