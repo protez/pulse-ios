@@ -4,3 +4,9 @@
 [submodule "lib/yuicompressor"]
 	path = lib/yuicompressor
 	url = git://github.com/yui/yuicompressor.git
+[submodule "lib/fancybox"]
+	path = lib/fancybox
+	url = git://github.com/fancyapps/fancyBox.git
+[submodule "lib/jquery-mousewheel"]
+	path = lib/jquery-mousewheel
+	url = git://github.com/brandonaaron/jquery-mousewheel.git

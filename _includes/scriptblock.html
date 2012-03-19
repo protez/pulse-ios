@@ -1,4 +1,9 @@
 <script type="text/javascript" src="{{site.url}}/js/website.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+</script>
 {% if page.script %}
 <script type="text/javascript">
     {{page.script}}
