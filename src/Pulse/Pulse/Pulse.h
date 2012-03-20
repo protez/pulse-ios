@@ -27,6 +27,14 @@
  * The signIntoPulse:withUserName:password:onSuccess:failure: method executes
  * asynchronously. To blocks are passed to the method that will be called
  * whether the operation succeeds or fails.
+ *
+ * @param url The base URL for the Pulse server to connect to.
+ * @param userName The login name for the user's Pulse account.
+ * @param password The password for the user's Pulse account.
+ * @param successHandler A block that will be invoked if the user is successfully
+ *      authenticated with Pulse and an access token is returned.
+ * @param failureHandler A block that will be invoked if the authentication
+ *      fails.
  */
 - (void)signIntoPulse:(NSURL *)url withUserName:(NSString *)userName password:(NSString *)password onSuccess:(void (^)())successHandler failure:(void (^)(NSError *))failureHandler;
 
