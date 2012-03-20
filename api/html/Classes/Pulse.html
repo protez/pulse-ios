@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>MainViewController_iPad Class Reference</title>
+		<title>Pulse Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">MainViewController_iPad Class Reference</h1>
+				<h1 class="hideInXcode">Pulse Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -32,12 +32,19 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
 	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/signIntoPulse:withUserName:password:onSuccess:failure:">&nbsp;&nbsp;&nbsp;&nbsp;- signIntoPulse:withUserName:password:onSuccess:failure:</option>
 	
 	
 	
@@ -53,6 +60,9 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
@@ -60,13 +70,20 @@
 
 
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signIntoPulse:withUserName:password:onSuccess:failure:">signIntoPulse:withUserName:password:onSuccess:failure:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="MainViewController_iPad Class Reference" name="top"></a>
+				<a title="Pulse Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -75,7 +92,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">MainViewController_iPad Class Reference</h1>
+						<h1 class="title title-header">Pulse Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -83,10 +100,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/MainViewController.html">MainViewController</a> : UIViewController</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">MainViewController_iPad.h</td>
+	<td class="specification-value">Pulse.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -96,8 +113,36 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The MainViewController_iPad class implements iPad specific behavior to the
-main view of the application.</p>
+						<p>Client gateway class that wraps the Pulse web API.</p>
+
+<p>The application will use a Pulse object to interact with a Pulse server. The
+Pulse class exposes methods that wrap the web API operations exposed by a
+Pulse server.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signIntoPulse:withUserName:password:onSuccess:failure:">&ndash;&nbsp;signIntoPulse:withUserName:password:onSuccess:failure:</a></code>
+		<span class="tooltip"><p>Signs the user into Pulse and retrieves the user&rsquo;s authentication token.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
 					</div>
 					
 					
@@ -108,9 +153,86 @@ main view of the application.</p>
 					
 					
 					
-					
-					
-					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/signIntoPulse:withUserName:password:onSuccess:failure:" title="signIntoPulse:withUserName:password:onSuccess:failure:"></a>
+	<h3 class="subsubtitle method-title">signIntoPulse:withUserName:password:onSuccess:failure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Signs the user into Pulse and retrieves the user&rsquo;s authentication token.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)signIntoPulse:(NSURL *)<em>url</em> withUserName:(NSString *)<em>userName</em> password:(NSString *)<em>password</em> onSuccess:(void ( ^ ) ( ))<em>successHandler</em> failure:(void ( ^ ) ( NSError *))<em>failureHandler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The base URL for the Pulse server to connect to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userName</em></dt>
+			<dd><p>The login name for the user&rsquo;s Pulse account.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The password for the user&rsquo;s Pulse account.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>successHandler</em></dt>
+			<dd><p>A block that will be invoked if the user is successfully
+authenticated with Pulse and an access token is returned.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>failureHandler</em></dt>
+			<dd><p>A block that will be invoked if the authentication
+fails.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Signs the user into Pulse and retrieves the user&rsquo;s authentication token.</p>
+
+<p>The signIntoPulse:withUserName:password:onSuccess:failure: method executes
+asynchronously. To blocks are passed to the method that will be called
+whether the operation succeeds or fails.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Pulse.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
