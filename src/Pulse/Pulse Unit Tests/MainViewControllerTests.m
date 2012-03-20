@@ -31,9 +31,11 @@
         return [navigationController isKindOfClass:[UINavigationController class]];
     }] animated:YES];
     
+    [mockMainViewController viewDidLoad];
     [mockMainViewController viewDidAppear:YES];
     
     [mockMainViewController verify];
+    GHAssertNotNil(signInViewController.pulse, @"The SignInViewController.pulse property was not set.");
     GHAssertEquals(UIModalPresentationFormSheet, navigationController.modalPresentationStyle, @"The modal presentation style should be UIModalPresentationFormSheet.");
     GHAssertEquals(UIModalTransitionStyleCoverVertical, navigationController.modalTransitionStyle, @"The modal transition style should be UIModalTransitionStyleCoverVertical.");
     GHAssertEqualObjects(signInViewController, navigationController.topViewController, @"The nagivation controller's top view controller should be the SignInViewController object.");

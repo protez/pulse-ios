@@ -1,13 +1,6 @@
-def app_path
-  ENV['APP_BUNDLE_PATH'] || (defined?(APP_BUNDLE_PATH) && APP_BUNDLE_PATH)
-end
-
 Given /^I have not signed into Pulse before$/ do
   steps "Given I reset the ipad application"
 end
-
-APPLICATIONS_DIR = "/Users/#{ENV['USER']}/Library/Application Support/iPhone Simulator/5.1/Applications"
-USER_DEFAULTS_PLIST = "Library/Preferences/com.neudesic.Pulse-Acceptance-Tests.dist.plist"
 
 Given /^I reset the (iphone|ipad) application$/ do |device|
   steps "When I quit the simulator"
@@ -54,7 +47,12 @@ Then /^I will be prompted for my new password$/ do
 end
 
 When /^I sign into Pulse with the wrong user name$/ do
-  pending
+  steps %{
+    When I type "https://pulse.neudesic.com" into the "Enter the address of the Pulse server" text field
+    When I type "test" into the "Enter your Pulse user name" text field
+    When I type "#{ENV['PULSE_PASSWORD']}" into the "Enter your Pulse password" text field
+    When I touch "Sign In"
+  }
 end
 
 Then /^I will be told that my login is wrong$/ do

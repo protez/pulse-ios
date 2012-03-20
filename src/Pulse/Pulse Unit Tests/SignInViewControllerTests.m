@@ -10,6 +10,7 @@
  *******************************************************************************/
 
 #import "SignInViewController.h"
+#import "Pulse.h"
 
 @interface SignInViewControllerTests : GHTestCase
 @end
@@ -28,18 +29,47 @@
 
 - (void)testSignInDismissesModalView
 {
+    __block void (^successHandler)();
+    id mockPulse = [OCMockObject mockForClass:[Pulse class]];
+    [[[mockPulse expect] andDo:^(NSInvocation * invocation) {
+        id value;
+        [invocation getArgument:&value atIndex:5];
+        successHandler = value;
+    }] signIntoPulse:[NSURL URLWithString:@"https://pulse.neudesic.com"] withUserName:@"test.user" password:@"test" onSuccess:[OCMArg any] failure:[OCMArg any]];
+    
+    id mockPulseAddress = [OCMockObject mockForClass:[UITextField class]];
+    [[[mockPulseAddress stub] andReturn:@"https://pulse.neudesic.com"] text];
+    
+    id mockUserName = [OCMockObject mockForClass:[UITextField class]];
+    [[[mockUserName stub] andReturn:@"test.user"] text];
+    
+    id mockPassword = [OCMockObject mockForClass:[UITextField class]];
+    [[[mockPassword stub] andReturn:@"test"] text];
+    
     SignInViewController *signInViewController = [[SignInViewController alloc] init];
-    id mockBarButtonItem = [OCMockObject mockForClass:[UIBarButtonItem class]];
-    id mockSignInViewController = [OCMockObject partialMockForObject:signInViewController];
+    signInViewController.pulse = mockPulse;
+    signInViewController.pulseAddress = mockPulseAddress;
+    signInViewController.userName = mockUserName;
+    signInViewController.password = mockPassword;
+    
     id mockNavigationController = [OCMockObject mockForClass:[UINavigationController class]];
-    [[[mockSignInViewController stub] andReturn:mockNavigationController] navigationController];
     [[mockNavigationController expect] dismissModalViewControllerAnimated:YES];
     
-    [mockSignInViewController signIn:mockBarButtonItem];
+    id mockSignInViewController = [OCMockObject partialMockForObject:signInViewController];
+    [[[mockSignInViewController stub] andReturn:mockNavigationController] navigationController];
     
+    id mockBarButtonItem = [OCMockObject mockForClass:[UIBarButtonItem class]];
+
+    [mockSignInViewController signIn:mockBarButtonItem];
+    successHandler();
+    
+    [mockPulse verify];
+    [mockSignInViewController verify];
     [mockNavigationController verify];
     [mockBarButtonItem verify];
-    [mockSignInViewController verify];
+    [mockPulseAddress verify];
+    [mockUserName verify];
+    [mockPassword verify];
 }
 
 @end

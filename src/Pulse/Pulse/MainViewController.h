@@ -11,12 +11,15 @@
  *******************************************************************************/
 
 @class SignInViewController;
+@class Pulse;
 
 /**
  * The MainViewController class implements the behavior and controls the
  * presentation of the main view for the Pulse client application.
  */
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController {
+    Pulse *pulse;
+}
 
 /**
  * Creates the SignInViewController object to use to sign the user into Pulse.

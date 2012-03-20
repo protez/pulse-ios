@@ -9,10 +9,12 @@
  *******************************************************************************/
 
 #import "SignInViewController.h"
+#import "Pulse.h"
 
 @implementation SignInViewController
 
 @synthesize password;
+@synthesize pulse;
 @synthesize pulseAddress;
 @synthesize signInButtonItem;
 @synthesize userName;
@@ -30,7 +32,11 @@
 
 - (IBAction)signIn:(id)sender
 {
-    [self.navigationController dismissModalViewControllerAnimated:YES];
+    [pulse signIntoPulse:[NSURL URLWithString:pulseAddress.text] withUserName:userName.text password:password.text onSuccess:^{
+        [self.navigationController dismissModalViewControllerAnimated:YES];        
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 @end

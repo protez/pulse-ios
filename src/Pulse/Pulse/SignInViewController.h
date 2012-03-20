@@ -10,6 +10,8 @@
  *
  *******************************************************************************/
 
+@class Pulse;
+
 /**
  * The SignInViewController class controls the sign-in view that the user will
  * enter his user name and password into for authenticating with the Pulse
@@ -22,6 +24,12 @@
  * into.
  */
 @property (nonatomic, strong) IBOutlet UITextField *password;
+
+/**
+ * Gets or sets the Pulse client object that the view controller should use to
+ * sign the user into Pulse.
+ */
+@property (nonatomic, strong) Pulse *pulse;
 
 /**
  * Gets or sets the UITextField object that the user will enter the URl of the

@@ -61,6 +61,10 @@
 		4CD447281516EE4A0085474F /* SignInView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447261516EE4A0085474F /* SignInView_iPhone.xib */; };
 		4CD447291516EE4A0085474F /* SignInView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD447261516EE4A0085474F /* SignInView_iPhone.xib */; };
 		4CD4472C1516F3E60085474F /* SignInViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */; };
+		4CD4472F1517E59E0085474F /* Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472E1517E59D0085474F /* Pulse.m */; };
+		4CD447301517E59E0085474F /* Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472E1517E59D0085474F /* Pulse.m */; };
+		4CD447311517E5A90085474F /* Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472E1517E59D0085474F /* Pulse.m */; };
+		4CD447341518EADD0085474F /* PulseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447331518EADD0085474F /* PulseTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +112,10 @@
 		4CD447221516EBE00085474F /* SignInView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView_iPad.xib; sourceTree = "<group>"; };
 		4CD447261516EE4A0085474F /* SignInView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView_iPhone.xib; sourceTree = "<group>"; };
 		4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewControllerTests.m; sourceTree = "<group>"; };
+		4CD4472D1517E59D0085474F /* Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pulse.h; sourceTree = "<group>"; };
+		4CD4472E1517E59D0085474F /* Pulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pulse.m; sourceTree = "<group>"; };
+		4CD447331518EADD0085474F /* PulseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseTests.m; sourceTree = "<group>"; };
+		4CD447351518F1040085474F /* Pulse_PrivateImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pulse_PrivateImplementation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,9 @@
 				4CD447041516D98A0085474F /* MainViewController.m */,
 				4CD4470D1516DF940085474F /* SignInViewController.h */,
 				4CD4470E1516DF940085474F /* SignInViewController.m */,
+				4CD4472D1517E59D0085474F /* Pulse.h */,
+				4CD4472E1517E59D0085474F /* Pulse.m */,
+				4CD447351518F1040085474F /* Pulse_PrivateImplementation.h */,
 			);
 			path = Pulse;
 			sourceTree = "<group>";
@@ -284,6 +295,7 @@
 				4CD447181516E50C0085474F /* MainViewController_iPadTests.m */,
 				4CD4471B1516E9A40085474F /* MainViewController_iPhoneTests.m */,
 				4CD4472B1516F3E60085474F /* SignInViewControllerTests.m */,
+				4CD447331518EADD0085474F /* PulseTests.m */,
 			);
 			name = "Unit Tests";
 			path = "Pulse Unit Tests";
@@ -432,6 +444,7 @@
 				4CD4470F1516DF940085474F /* SignInViewController.m in Sources */,
 				4CD447141516E4CD0085474F /* MainViewController_iPad.m in Sources */,
 				4CD4471F1516EA070085474F /* MainViewController_iPhone.m in Sources */,
+				4CD4472F1517E59E0085474F /* Pulse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +460,7 @@
 				4CD447101516DF940085474F /* SignInViewController.m in Sources */,
 				4CD447151516E4CD0085474F /* MainViewController_iPad.m in Sources */,
 				4CD447201516EA070085474F /* MainViewController_iPhone.m in Sources */,
+				4CD447301517E59E0085474F /* Pulse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +477,8 @@
 				4CD4471C1516E9A40085474F /* MainViewController_iPhoneTests.m in Sources */,
 				4CD447211516EA070085474F /* MainViewController_iPhone.m in Sources */,
 				4CD4472C1516F3E60085474F /* SignInViewControllerTests.m in Sources */,
+				4CD447311517E5A90085474F /* Pulse.m in Sources */,
+				4CD447341518EADD0085474F /* PulseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
