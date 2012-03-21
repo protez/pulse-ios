@@ -3,6 +3,7 @@ layout: post
 title: Authenticating the User using Pulse
 date: 2012-03-20 10:38:00
 description: In this post, I go back and revise the code that I implemented in the last post to actually authenticate the user using Pulse and retrieve the user's access token for the Pulse web API.
+author: Michael F. Collins, III
 ---
 In my last post, I took a shortcut and completed the scenario (as far as the
 Cucumber steps were concerned) without actually authenticating the user. Yes,

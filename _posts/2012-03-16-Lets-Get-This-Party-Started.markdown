@@ -3,6 +3,7 @@ layout: post
 title: Let's Get This Party Started!
 date: 2012-03-16 20:20:00
 description: In this post, I introduce the Pulse for iOS project and talk about some of the goals that I hope to achieve. I discuss the approach that I will take to developing the application and some of my reasoning for choosing that approach.
+author: Michael F. Collins, III
 ---
 Looking at my checklist, I can check off creating the GitHub project. Now I
 need to move onto step #2: creating some code to put in said GitHub project.

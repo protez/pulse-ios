@@ -3,6 +3,7 @@ layout: post
 title: Signing Into Pulse
 date: 2012-03-19 10:43:00
 description: In this post, I start to implement the first user story that will sign the user into Pulse.
+author: Michael F. Collins, III
 ---
 Crafting the User Story
 -----------------------
