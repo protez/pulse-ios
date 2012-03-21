@@ -52,7 +52,7 @@ end
 
 When /^I sign into Pulse with the wrong user name$/ do
   steps %{
-    When I type "https://pulse.neudesic.com" into the "Enter the address of the Pulse server" text field
+    When I type "https://pulse.neudesic.com" into the "Enter the Pulse server address" text field
     When I type "test" into the "Enter your Pulse user name" text field
     When I type "#{ENV['PULSE_PASSWORD']}" into the "Enter your Pulse password" text field
     When I touch "Sign In"

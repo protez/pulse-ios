@@ -13,6 +13,11 @@
 
 @implementation Pulse
 
+- (BOOL)loggedIn
+{
+    return nil != accessToken;
+}
+
 - (void)signIntoPulse:(NSURL *)url withUserName:(NSString *)userName password:(NSString *)password onSuccess:(void (^)())successHandler failure:(void (^)(NSError *))failureHandler
 {
     pulseURL = url;

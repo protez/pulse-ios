@@ -27,6 +27,11 @@
 {
     [super viewDidAppear:animated];
     
+    if ([pulse loggedIn])
+    {
+        return;
+    }
+    
     SignInViewController *signInViewController = [self createSignInViewController];
     signInViewController.pulse = pulse;
     

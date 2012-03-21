@@ -10,6 +10,7 @@
 
 #import "SignInViewController.h"
 #import "Pulse.h"
+#import "MBProgressHUD.h"
 
 @implementation SignInViewController
 
@@ -33,9 +34,13 @@
 
 - (IBAction)signIn:(id)sender
 {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = NSLocalizedString(@"Signing into Pulse", @"Signing into Pulse");
     [pulse signIntoPulse:[NSURL URLWithString:pulseAddress.text] withUserName:userName.text password:password.text onSuccess:^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self.navigationController dismissModalViewControllerAnimated:YES];        
     } failure:^(NSError *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSLog(@"%@", error);
     }];
 }

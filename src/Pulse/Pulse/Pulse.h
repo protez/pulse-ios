@@ -22,6 +22,16 @@
 }
 
 /**
+ * The loggedIn method determines if the current user is logged into Pulse. The
+ * loggedIn method may return YES if the user has been previously logged into
+ * Pulse, but the user's session may have expired on Pulse.
+ *
+ * @return Returns YES if the user is logged into Pulse, or NO if the user has
+ *      not been logged into Pulse.
+ */
+- (BOOL)loggedIn;
+
+/**
  * Signs the user into Pulse and retrieves the user's authentication token.
  *
  * The signIntoPulse:withUserName:password:onSuccess:failure: method executes

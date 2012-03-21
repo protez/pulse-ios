@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CBE898E151A10A4009F0817 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE898D151A10A4009F0817 /* MBProgressHUD.m */; };
+		4CBE898F151A10A4009F0817 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE898D151A10A4009F0817 /* MBProgressHUD.m */; };
+		4CBE8990151A10A4009F0817 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE898D151A10A4009F0817 /* MBProgressHUD.m */; };
 		4CD44683151687990085474F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44682151687990085474F /* UIKit.framework */; };
 		4CD44685151687990085474F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44684151687990085474F /* Foundation.framework */; };
 		4CD44687151687990085474F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD44686151687990085474F /* CoreGraphics.framework */; };
@@ -71,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CBE898C151A10A4009F0817 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../../../lib/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		4CBE898D151A10A4009F0817 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../../../lib/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		4CD4467E151687990085474F /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD44682151687990085474F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CD44684151687990085474F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -205,6 +210,8 @@
 		4CD4468A151687990085474F /* Pulse */ = {
 			isa = PBXGroup;
 			children = (
+				4CBE898C151A10A4009F0817 /* MBProgressHUD.h */,
+				4CBE898D151A10A4009F0817 /* MBProgressHUD.m */,
 				4CD446C315168CEA0085474F /* iPhone */,
 				4CD446C215168CDC0085474F /* iPad */,
 				4CD44693151687990085474F /* PulseApplicationDelegate.h */,
@@ -453,6 +460,7 @@
 				4CD447141516E4CD0085474F /* MainViewController_iPad.m in Sources */,
 				4CD4471F1516EA070085474F /* MainViewController_iPhone.m in Sources */,
 				4CD4472F1517E59E0085474F /* Pulse.m in Sources */,
+				4CBE898E151A10A4009F0817 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +477,7 @@
 				4CD447151516E4CD0085474F /* MainViewController_iPad.m in Sources */,
 				4CD447201516EA070085474F /* MainViewController_iPhone.m in Sources */,
 				4CD447301517E59E0085474F /* Pulse.m in Sources */,
+				4CBE898F151A10A4009F0817 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +496,7 @@
 				4CD4472C1516F3E60085474F /* SignInViewControllerTests.m in Sources */,
 				4CD447311517E5A90085474F /* Pulse.m in Sources */,
 				4CD447341518EADD0085474F /* PulseTests.m in Sources */,
+				4CBE8990151A10A4009F0817 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
