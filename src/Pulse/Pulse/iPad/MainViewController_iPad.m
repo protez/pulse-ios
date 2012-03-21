@@ -18,7 +18,6 @@
 - (SignInViewController *)createSignInViewController
 {
     SignInViewController *signInViewController = [[SignInViewController alloc] initWithNibName:@"SignInView_iPad" bundle:nil];
-    signInViewController.title = NSLocalizedString(@"Sign Into Pulse", @"Sign Into Pulse");
     return signInViewController;
 }
 

@@ -65,6 +65,9 @@
 		4CD447301517E59E0085474F /* Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472E1517E59D0085474F /* Pulse.m */; };
 		4CD447311517E5A90085474F /* Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4472E1517E59D0085474F /* Pulse.m */; };
 		4CD447341518EADD0085474F /* PulseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD447331518EADD0085474F /* PulseTests.m */; };
+		4CD4474815196CAE0085474F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4474715196CAE0085474F /* Security.framework */; };
+		4CD4474915196CB60085474F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4474715196CAE0085474F /* Security.framework */; };
+		4CD4474A15196CB70085474F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD4474715196CAE0085474F /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +119,7 @@
 		4CD4472E1517E59D0085474F /* Pulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pulse.m; sourceTree = "<group>"; };
 		4CD447331518EADD0085474F /* PulseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseTests.m; sourceTree = "<group>"; };
 		4CD447351518F1040085474F /* Pulse_PrivateImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pulse_PrivateImplementation.h; sourceTree = "<group>"; };
+		4CD4474715196CAE0085474F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD4474815196CAE0085474F /* Security.framework in Frameworks */,
 				4CD44683151687990085474F /* UIKit.framework in Frameworks */,
 				4CD44685151687990085474F /* Foundation.framework in Frameworks */,
 				4CD44687151687990085474F /* CoreGraphics.framework in Frameworks */,
@@ -141,6 +146,7 @@
 				4CD446A715168A7A0085474F /* CoreData.framework in Frameworks */,
 				4CD446BE15168C4B0085474F /* libFrank.a in Frameworks */,
 				4CD446BF15168C4B0085474F /* libShelley.a in Frameworks */,
+				4CD4474915196CB60085474F /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +159,7 @@
 				4CD446ED1516A59F0085474F /* Foundation.framework in Frameworks */,
 				4CD446EE1516A59F0085474F /* CoreGraphics.framework in Frameworks */,
 				4CD446FF1516A96D0085474F /* GHUnitIOS.framework in Frameworks */,
+				4CD4474A15196CB70085474F /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +190,7 @@
 		4CD44681151687990085474F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD4474715196CAE0085474F /* Security.framework */,
 				4CD447081516DD400085474F /* libOCMock.a */,
 				4CD446FE1516A96D0085474F /* GHUnitIOS.framework */,
 				4CD446C015168C6F0085474F /* CFNetwork.framework */,
@@ -680,6 +688,7 @@
 				4CD4469D151687990085474F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CD446AA15168A7A0085474F /* Build configuration list for PBXNativeTarget "Acceptance Tests" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +697,7 @@
 				4CD446AC15168A7A0085474F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CD446FB1516A59F0085474F /* Build configuration list for PBXNativeTarget "Pulse Unit Tests" */ = {
 			isa = XCConfigurationList;
@@ -696,6 +706,7 @@
 				4CD446FD1516A59F0085474F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

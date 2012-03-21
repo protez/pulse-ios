@@ -1,5 +1,9 @@
+Given /^I am running Pulse on an (ipad|iphone)$/ do |device|
+  @device = device
+end
+
 Given /^I have not signed into Pulse before$/ do
-  steps "Given I reset the ipad application"
+  steps "Given I reset the #{@device} application"
 end
 
 Given /^I reset the (iphone|ipad) application$/ do |device|
@@ -19,7 +23,7 @@ end
 
 When /^I sign into Pulse$/ do
   steps %{
-    When I type "https://pulse.neudesic.com" into the "Enter the address of the Pulse server" text field
+    When I type "https://pulse.neudesic.com" into the "Enter the Pulse server address" text field
     When I type "#{ENV['PULSE_USER_NAME']}" into the "Enter your Pulse user name" text field
     When I type "#{ENV['PULSE_PASSWORD']}" into the "Enter your Pulse password" text field
     When I touch "Sign In"

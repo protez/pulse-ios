@@ -26,6 +26,7 @@
     [super viewDidLoad];
     
     self.navigationItem.rightBarButtonItem = signInButtonItem;
+    self.title = NSLocalizedString(@"Sign Into Pulse", @"Sign Into Pulse");
 }
 
 #pragma mark - Actions

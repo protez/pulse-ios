@@ -19,7 +19,6 @@
 - (SignInViewController *)createSignInViewController
 {
     SignInViewController *viewController = [[SignInViewController alloc] initWithNibName:@"SignInView_iPhone" bundle:nil];
-    viewController.title = NSLocalizedString(@"Sign In", @"Sign In");
     return viewController;
 }
 
